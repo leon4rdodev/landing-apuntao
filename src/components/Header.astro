@@ -1,0 +1,104 @@
+---
+export interface Props {
+	active?: 'inicio' | 'planes' | 'gana';
+}
+const { active } = Astro.props;
+---
+
+<header class="header">
+	<div class="header-inner">
+		<a href="/" class="header-logo">
+			<span class="header-logo-text">Apunta'o</span>
+		</a>
+
+		<nav class="header-nav">
+			<a href="/" class={`header-link${active === 'inicio' ? ' header-link--active' : ''}`}>Inicio</a>
+			<a href="/#planes" class={`header-link${active === 'planes' ? ' header-link--active' : ''}`}>Planes</a>
+			<a href="/referidos" class={`header-link${active === 'gana' ? ' header-link--active' : ''}`}>Gana con Apunta'o</a>
+		</nav>
+
+		<a href="/apuntao.apk" class="header-cta" download>
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+			<span>Descargar</span>
+		</a>
+	</div>
+</header>
+
+<style>
+	.header {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		background: rgba(248, 250, 252, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border-bottom: 1px solid var(--border);
+	}
+	.header-inner {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 20px;
+		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+	}
+	.header-logo {
+		text-decoration: none;
+		flex-shrink: 0;
+	}
+	.header-logo-text {
+		font-size: 18px;
+		font-weight: 900;
+		color: var(--text);
+		letter-spacing: -0.5px;
+	}
+	.header-nav {
+		display: none;
+		align-items: center;
+		gap: 4px;
+	}
+	.header-link {
+		padding: 6px 14px;
+		border-radius: 100px;
+		font-size: 14px;
+		font-weight: 600;
+		color: var(--text-secondary);
+		text-decoration: none;
+		transition: all 0.2s;
+		white-space: nowrap;
+	}
+	.header-link:hover {
+		color: var(--text);
+		background: var(--border-subtle);
+	}
+	.header-link--active {
+		color: var(--primary);
+		background: var(--primary-light);
+	}
+	.header-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		padding: 8px 18px;
+		background: var(--primary);
+		color: white;
+		border-radius: 100px;
+		font-weight: 700;
+		font-size: 13px;
+		font-family: inherit;
+		text-decoration: none;
+		transition: all 0.2s;
+		flex-shrink: 0;
+	}
+	.header-cta:hover {
+		background: var(--primary-dark);
+	}
+
+	@media (min-width: 640px) {
+		.header-nav { display: flex; }
+		.header-inner { height: 64px; }
+		.header-logo-text { font-size: 20px; }
+	}
+</style>
