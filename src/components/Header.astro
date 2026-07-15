@@ -35,7 +35,7 @@ const { active } = Astro.props;
 		border-bottom: 1px solid var(--border);
 	}
 	.header-inner {
-		max-width: 960px;
+		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 20px;
 		height: 56px;
@@ -100,5 +100,9 @@ const { active } = Astro.props;
 		.header-nav { display: flex; }
 		.header-inner { height: 64px; }
 		.header-logo-text { font-size: 20px; }
+		.header-inner { max-width: 960px; }
+	}
+	@media (min-width: 1024px) {
+		.header-inner { max-width: 1200px; }
 	}
 </style>

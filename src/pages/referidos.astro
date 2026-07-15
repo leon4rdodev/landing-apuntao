@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 ---
 
-<Layout title="Gana con Apunta'o - Programa de Referidos">
+<Layout title="Gana con Apunta'o - Programa de Referidos" description="Gana hasta $12 USD por cada referido en Apunta'o. Refiere a otros dueños de negocios y recibe el 40% de su suscripción. Sin límite de referidos. ¡Únete ahora!">
 	<Header active="gana" />
 	<div class="orb orb--top-left"></div>
 	<div class="orb orb--bottom-right"></div>
@@ -55,24 +55,24 @@ import Header from '../components/Header.astro';
 
 			<div class="example-card">
 				<div class="example-row">
-					<span class="example-label">Plan Mensual ($150)</span>
-					<span class="example-value">Ganas <strong>$60</strong></span>
+					<span class="example-label">Plan Mensual ($3.99 USD)</span>
+					<span class="example-value">Ganas <strong>$1.60 USD</strong></span>
 				</div>
 				<div class="example-row">
-					<span class="example-label">Plan Trimestral ($360)</span>
-					<span class="example-value">Ganas <strong>$144</strong></span>
+					<span class="example-label">Plan Trimestral ($9.99 USD)</span>
+					<span class="example-value">Ganas <strong>$4.00 USD</strong></span>
 				</div>
 				<div class="example-row example-row--featured">
-					<span class="example-label">Plan Anual ($1,200)</span>
-					<span class="example-value">Ganas <strong>$480</strong></span>
+					<span class="example-label">Plan Anual ($29.99 USD)</span>
+					<span class="example-value">Ganas <strong>$12.00 USD</strong></span>
 				</div>
 			</div>
 
-			<p class="examples-note">Sin límite. Refiere a 10 personas en plan anual y te llevas <strong>$4,800</strong>.</p>
+			<p class="examples-note">Sin límite. Refiere a 10 personas en plan anual y te llevas <strong>$120 USD</strong>.</p>
 		</section>
 
 		<section class="cta">
-			<h2 class="cta-title">¿Tienes clientes o conocidos con colmado?</h2>
+			<h2 class="cta-title">¿Conoces dueños de tiendas, colmados o negocios?</h2>
 			<a href="https://wa.me/18493759671?text=Hola%2C%20quiero%20participar%20en%20el%20programa%20de%20referidos%20de%20Apunta%27o." class="btn-download" target="_blank" rel="noopener">
 				<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 				Quiero participar
@@ -95,7 +95,7 @@ import Header from '../components/Header.astro';
 				apuntaord@gmail.com
 			</a>
 		</div>
-		<p class="footer-copy">© 2026 Apunta'o. Hecho para dueños de colmados.</p>
+		<p class="footer-copy">© 2026 Apunta'o. Hecho para dueños de negocios.</p>
 	</footer>
 </Layout>
 
@@ -126,6 +126,8 @@ import Header from '../components/Header.astro';
 	.hero {
 		text-align: center;
 		padding: 32px 24px 24px;
+		max-width: 1200px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 1;
 	}
@@ -174,7 +176,7 @@ import Header from '../components/Header.astro';
 
 	.steps {
 		padding: 32px 24px;
-		max-width: 420px;
+		max-width: 1200px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 1;
@@ -219,7 +221,7 @@ import Header from '../components/Header.astro';
 
 	.examples {
 		padding: 24px 24px 32px;
-		max-width: 420px;
+		max-width: 1200px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 1;
@@ -264,6 +266,8 @@ import Header from '../components/Header.astro';
 	.cta {
 		text-align: center;
 		padding: 8px 24px 48px;
+		max-width: 1200px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 1;
 	}
@@ -300,6 +304,8 @@ import Header from '../components/Header.astro';
 	.footer {
 		text-align: center;
 		padding: 32px 24px 40px;
+		max-width: 1200px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 1;
 		border-top: 1px solid var(--border);
@@ -328,15 +334,105 @@ import Header from '../components/Header.astro';
 		opacity: 0.6;
 	}
 
-	@media (min-width: 640px) {
-		.hero-title { font-size: 40px; }
-		.hero { padding-top: 64px; }
-		.steps { max-width: 500px; }
-		.examples { max-width: 500px; }
-		.section-title { font-size: 28px; }
-		.cta-title { font-size: 26px; }
+	@media (max-width: 359px) {
+		.hero { padding: 24px 16px; }
+		.hero-title { font-size: 24px; }
+		.hero-subtitle { font-size: 15px; }
+		.hero-icon { width: 56px; height: 56px; }
+		.hero-icon svg { width: 28px; height: 28px; }
+		.steps { padding: 24px 16px; }
+		.step-card { padding: 16px; gap: 12px; }
+		.step-number { width: 30px; height: 30px; font-size: 14px; }
+		.step-content strong { font-size: 14px; }
+		.step-content span { font-size: 13px; }
+		.examples { padding: 16px 16px 24px; }
+		.example-row { padding: 12px 16px; flex-direction: column; gap: 4px; align-items: flex-start; }
+		.section-title { font-size: 20px; }
+		.cta-title { font-size: 18px; }
+		.cta { padding: 8px 16px 32px; }
+		.btn-download { padding: 14px 24px; font-size: 15px; width: 100%; justify-content: center; }
+		.footer { padding: 24px 16px 32px; }
+		.footer-links { flex-direction: column; align-items: center; gap: 12px; }
+		.orb--top-left { width: 200px; height: 200px; top: -80px; left: -80px; }
+		.orb--bottom-right { width: 200px; height: 200px; bottom: -80px; right: -80px; }
 	}
+
+	@media (min-width: 360px) and (max-width: 639px) {
+		.hero { padding: 32px 20px 24px; }
+		.hero-title { font-size: 28px; }
+		.hero-subtitle { font-size: 16px; }
+		.steps { padding: 32px 20px; }
+		.examples { padding: 24px 20px 32px; }
+		.cta { padding: 16px 20px 40px; }
+		.cta .btn-download { width: 100%; justify-content: center; }
+		.footer { padding: 28px 20px 36px; }
+		.footer-links { flex-direction: column; align-items: center; gap: 12px; }
+	}
+
+	@media (min-width: 640px) {
+		.hero { padding: 48px 32px 32px; }
+		.hero-title { font-size: 40px; }
+		.hero-icon { width: 80px; height: 80px; }
+		.hero-icon svg { width: 40px; height: 40px; }
+		.hero-subtitle { font-size: 18px; max-width: 500px; }
+		.steps { max-width: 560px; padding: 40px 32px; }
+		.step-card { padding: 24px; }
+		.section-title { font-size: 28px; }
+		.examples { max-width: 560px; padding: 24px 32px 40px; }
+		.example-row { padding: 18px 24px; }
+		.example-label { font-size: 16px; }
+		.example-value { font-size: 17px; }
+		.examples-note { font-size: 15px; }
+		.cta-title { font-size: 26px; }
+		.cta { padding: 16px 32px 56px; }
+		.footer { padding: 36px 32px 44px; }
+		.orb--top-left { width: 500px; height: 500px; top: -200px; left: -200px; }
+		.orb--bottom-right { width: 500px; height: 500px; bottom: -200px; right: -200px; }
+	}
+
+	@media (min-width: 768px) {
+		.hero { padding: 64px 40px 40px; }
+		.hero-title { font-size: 44px; }
+		.steps { max-width: 640px; padding: 48px 40px; }
+		.section-title { font-size: 30px; }
+		.examples { max-width: 640px; padding: 32px 40px 48px; }
+		.cta-title { font-size: 28px; }
+		.cta { padding: 24px 40px 64px; }
+		.footer { padding: 40px 40px 48px; }
+	}
+
 	@media (min-width: 1024px) {
+		.hero { padding: 80px 48px 48px; }
 		.hero-title { font-size: 48px; }
+		.hero-subtitle { font-size: 19px; max-width: 560px; }
+		.steps { max-width: 720px; padding: 56px 48px; }
+		.section-title { font-size: 32px; }
+		.step-card { padding: 28px; }
+		.examples { max-width: 720px; padding: 40px 48px 56px; }
+		.cta-title { font-size: 30px; }
+		.cta { padding: 32px 48px 72px; }
+		.footer { padding: 44px 48px 52px; }
+		.orb--top-left { width: 600px; height: 600px; top: -240px; left: -240px; }
+		.orb--bottom-right { width: 600px; height: 600px; bottom: -240px; right: -240px; }
+	}
+
+	@media (min-width: 1280px) {
+		.hero-title { font-size: 52px; }
+		.steps { max-width: 800px; }
+		.examples { max-width: 720px; }
+		.hero,
+		.steps,
+		.examples,
+		.cta,
+		.footer { margin-left: auto; margin-right: auto; }
+	}
+
+	@media (min-width: 1440px) {
+		.hero { padding: 100px 0 56px; }
+		.hero-title { font-size: 56px; }
+		.steps { padding: 64px 0; }
+		.examples { padding: 48px 0 64px; }
+		.cta { padding: 40px 0 80px; }
+		.footer { padding: 48px 0 56px; }
 	}
 </style>

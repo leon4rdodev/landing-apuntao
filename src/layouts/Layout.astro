@@ -1,19 +1,69 @@
 ---
 export interface Props {
 	title?: string;
+	description?: string;
 }
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Descarga Apunta'o - La app para gestionar tus cuentas por cobrar de forma sencilla y rápida." />
+		
+		<!-- SEO Superior -->
+		<title>{title ?? "Apunta'o - La Mejor Libreta de Fiados Digital"}</title>
+		<meta name="description" content={description ?? "Apunta'o es la app para digitalizar tu libreta de fiados, controlar cuentas por cobrar y gestionar deudas. Pruébala 7 días gratis sin compromiso."} />
+		<meta name="keywords" content="apuntao, apuntao app, apuntao rd, apuntao colmados, app de libreta, libreta de apuntes, libreta de fiados, libreta de fiados digital, registro de deudas, cuentas por cobrar, cuaderno de fiado digital, app para fiar, fiados, control de deudas, app para tiendas, prestamos, creditos, gestionar deudas, app para colmados, app de cobros" />
+		<meta name="author" content="Apunta'o" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://apuntao.app/" />
+
+		<!-- Hreflang -->
+		<link rel="alternate" href="https://apuntao.app/" hreflang="es-DO" />
+		<link rel="alternate" href="https://apuntao.app/" hreflang="es" />
+		<link rel="alternate" href="https://apuntao.app/" hreflang="x-default" />
+
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title ?? "Apunta'o - Tu Libreta de Fiados Digital"} />
+		<meta property="og:description" content={description ?? "Digitaliza tu cuaderno de fiados y controla tus cuentas por cobrar desde tu celular. 100% offline."} />
+		<meta property="og:url" content="https://apuntao.app/" />
+		<meta property="og:site_name" content="Apunta'o" />
+		<meta property="og:image" content="https://apuntao.app/hero.png" />
+		<meta property="og:locale" content="es_DO" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title ?? "Apunta'o - Tu Libreta de Fiados Digital"} />
+		<meta name="twitter:description" content={description ?? "Digitaliza tu cuaderno de fiados y controla tus cuentas por cobrar desde tu celular. 100% offline."} />
+		<meta name="twitter:image" content="https://apuntao.app/hero.png" />
+
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "MobileApplication",
+				"name": "Apunta'o",
+				"operatingSystem": "Android",
+				"applicationCategory": "BusinessApplication",
+				"description": "App para digitalizar tu libreta de fiados, controlar cuentas por cobrar y gestionar deudas de clientes de forma sencilla y 100% offline.",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD",
+					"description": "7 días gratis, luego planes desde $3.99 USD/mes"
+				},
+				"author": {
+					"@type": "Organization",
+					"name": "Apunta'o"
+				}
+			}
+		</script>
+
 		<meta name="theme-color" content="#16a34a" />
-		<title>{title ?? "Apunta'o - Descarga la App"}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -31,7 +81,7 @@ const { title } = Astro.props;
 		--background: #f8fafc;
 		--surface: #ffffff;
 		--text: #111827;
-		--text-secondary: #6b7280;
+		--text-secondary: #4b5563;
 		--border: #e5e7eb;
 		--border-subtle: #f3f4f6;
 		--success: #22c55e;
